@@ -50,7 +50,7 @@ class ViewController: UIViewController {
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-                self.pokemonTextView.text = json["name"].stringValue 
+                self.pokemonTextView.text = json.rawString()
                 
             case .failure(let error):
                 self.pokemonTextView.text = "Invalid selection entered or an error occured. Please Try Again!"

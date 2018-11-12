@@ -18,23 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKo-dv-sMB">
-                                <rect key="frame" x="139" y="86" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKo-dv-sMB">
+                                <rect key="frame" x="20" y="86" width="335" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter a Pokemon" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9wE-48-Oyk">
-                                <rect key="frame" x="67" y="162" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter a Pokemon" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9wE-48-Oyk">
+                                <rect key="frame" x="0.0" y="162" width="375" height="505"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZM-5Z-sc3">
-                                <rect key="frame" x="163" y="334" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZM-5Z-sc3">
+                                <rect key="frame" x="20" y="124" width="335" height="30"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="searchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9qY-LR-h7L"/>
@@ -42,6 +40,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9wE-48-Oyk" secondAttribute="bottom" id="0Dh-rf-7nH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9wE-48-Oyk" secondAttribute="trailing" id="189-aR-vlV"/>
+                            <constraint firstItem="9wE-48-Oyk" firstAttribute="top" secondItem="fZM-5Z-sc3" secondAttribute="bottom" constant="8" id="1ML-nB-7VS"/>
+                            <constraint firstItem="fZM-5Z-sc3" firstAttribute="centerX" secondItem="9wE-48-Oyk" secondAttribute="centerX" id="2UD-UB-iGS"/>
+                            <constraint firstItem="9wE-48-Oyk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5a4-c9-l9U"/>
+                            <constraint firstItem="fZM-5Z-sc3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9WY-5N-Aec"/>
+                            <constraint firstItem="fZM-5Z-sc3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="124" id="AYa-sl-XVS"/>
+                            <constraint firstItem="MKo-dv-sMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Eqg-O0-Dah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fZM-5Z-sc3" secondAttribute="trailing" constant="20" id="HQN-fY-zJX"/>
+                            <constraint firstItem="fZM-5Z-sc3" firstAttribute="centerX" secondItem="MKo-dv-sMB" secondAttribute="centerX" id="Mv8-np-Bnt"/>
+                            <constraint firstItem="fZM-5Z-sc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YBi-NA-NGM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKo-dv-sMB" secondAttribute="trailing" constant="20" id="ZwQ-3E-iij"/>
+                            <constraint firstItem="fZM-5Z-sc3" firstAttribute="top" secondItem="MKo-dv-sMB" secondAttribute="bottom" constant="8" symbolic="YES" id="yeR-Dq-Lpx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -51,6 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>
